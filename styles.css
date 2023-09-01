@@ -1,1 +1,23 @@
 /*  your css code here. If applicable */
+#container {
+    margin: 20px;
+    po
+}
+
+#container::before {
+    content: "Before Content";
+    position: absolute;
+    top: 0;
+    left:-20px; /* Adjust as needed for spacing */
+    color: #f00;
+    font-size: 20px;
+}
+
+#container::after {
+    content: "After Content";
+    position: absolute;
+    bottom: 0;
+    right:20px; /* Adjust as needed for spacing */
+    color: #f00;
+    font-size: 20px;
+}
