@@ -1,12 +1,11 @@
 /*  your css code here. If applicable */
 #container {
     margin: 20px;
-    po
+    position:relative;
 }
 
 #container::before {
-    content: "Before Content";
-    position: absolute;
+    content: "Before Element";
     top: 0;
     left:-20px; /* Adjust as needed for spacing */
     color: #f00;
@@ -14,10 +13,10 @@
 }
 
 #container::after {
-    content: "After Content";
-    position: absolute;
+    content: "After Element";
+
     bottom: 0;
-    right:20px; /* Adjust as needed for spacing */
+    right:20px;
     color: #f00;
     font-size: 20px;
 }
